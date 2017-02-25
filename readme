@@ -1,3 +1,31 @@
-data from http://www.football-data.co.uk/netherlandsm.php
+Neural network to predict dutch soccer league
 
+A multi lever perceptron to predict the chances (0-100%) of each team
+in this weeks eredivision soccer  league
+
+depends on numpy, pandas and keras
+To get the data:
+
+data from http://www.football-data.co.uk/netherlandsm.php
 this week : http://www.football-data.co.uk/matches.php
+
+Output looks like this(numbers are percentage between 0 and 100):
+
+
+match home draw away
+Den Haag-Twente 28.0 27.0 45.0
+Excelsior-Willem II 30.0 39.0 32.0
+Groningen-Utrecht 25.0 38.0 38.0
+Heerenveen-Roda 48.0 33.0 20.0
+Nijmegen-Sparta Rotterdam 58.0 26.0 16.0
+Ajax-Heracles 83.0 12.0 5.0
+AZ Alkmaar-Zwolle 47.0 33.0 21.0
+Feyenoord-PSV Eindhoven 77.0 13.0 10.0
+Go Ahead Eagles-Vitesse 27.0 33.0 40.0
+
+
+
+
+Any questions?
+
+remko66@gmail.com
