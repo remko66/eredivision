@@ -4,6 +4,14 @@ from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation,Flatten
 from keras.optimizers import RMSprop
 from keras.utils import np_utils
+import urllib.request
+
+def download(url,local):
+    response=urllib.request.urlopen(url)
+    html = response.read()
+    with open(local,'wb') as output:
+        output.write(html)
+
 
 def model():
     global dict
@@ -39,6 +47,10 @@ def one_hot_res(result):
         ar[2] = 1
     return ar
 
+url="http://www.football-data.co.uk/mmz4281/1617/N1.csv"
+csv="data/N1.csv"
+download(url,csv)
+download('http://www.football-data.co.uk/fixtures.csv','data/fixtures.csv')
 
 dict={}
 dict_rev={}
@@ -82,6 +94,7 @@ for a, b in dx.iterrows():
 
 model=model()
 print(model)
+
 
 model.fit(x, y, batch_size=1, nb_epoch=50,
           verbose=1)

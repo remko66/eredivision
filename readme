@@ -9,6 +9,8 @@ To get the data:
 data from http://www.football-data.co.uk/netherlandsm.php
 this week : http://www.football-data.co.uk/matches.php
 
+(It downloads it now automatically but probably the links need to be changed for the new season(currently 2016-2017)
+
 Output looks like this(numbers are percentage between 0 and 100):
 
 
